@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Hack</title>
+<style>
+body{
+background:black;
+color:lime;
+font-family:monospace;
+text-align:center;
+padding-top:100px;
+overflow:hidden;
+}
+.blink {
+animation: blink 1s infinite;
+}
+@keyframes blink {
+0% {opacity:1;}
+50% {opacity:0;}
+100% {opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<h2 id="typing"></h2>
+<h1 class="blink">🎉 HAPPY BIRTHDAY BURO LEBAR 🎉</h1>
+
+<script>
+let text = "🔐 Accessing Birthday Server...\nUser Found: Buro_Lebar.exe\nBrain Status: 2% Loading...";
+let i = 0;
+let speed = 50;
+
+function typeWriter() {
+if (i < text.length) {
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typeWriter, speed);
+}
+}
+typeWriter();
+</script>
+
+</body>
+</html>
